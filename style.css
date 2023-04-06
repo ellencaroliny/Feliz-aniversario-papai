@@ -216,3 +216,69 @@ object-position: top;
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
+/* Adicione uma regra para o header */
+header {
+  padding: 10px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Adicione uma regra para o main */
+main {
+  padding: 10px;
+}
+
+/* Adicione uma regra para a seção de produtos */
+.products {
+  margin: 20px 0;
+}
+
+/* Adicione uma regra para o título "Momentos" */
+.products h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Adicione uma regra para o grid de produtos */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+/* Adicione uma regra para os cartões de produtos */
+.product-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Adicione uma regra para as imagens dos produtos */
+.product-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Adicione uma regra para os títulos dos produtos */
+.product-card h3 {
+  font-size: 18px;
+  font-weight: normal;
+  margin: 10px;
+  text-align: center;
+}
+
+/* Adicione regras de media query para telas menores */
+@media only screen and (max-width: 576px) {
+  /* Altera o grid de produtos para uma única coluna */
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Aumenta o tamanho dos títulos dos produtos */
+  .product-card h3 {
+    font-size: 20px;
+  }
+}
