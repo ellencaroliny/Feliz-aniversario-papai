@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
+/* Estilos gerais da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F8F8F8;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos para o contêiner principal */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Estilos para o título */
+  h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para o subtítulo */
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  /* Estilos para os botões */
+  .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #00BFFF;
+    transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #0080FF;
+  }
+  
+  /* Estilos para o fundo */
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://images.unsplash.com/photo-1555099962-dc0f8f8e7a9c");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    filter: brightness(0.5);
+  }
+body{
+    font-family: 'Alata', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+li{ list-style: none;}
+a{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+}
+h1, h2, h3{
+    font-family: 'Alata', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+letter-spacing: 1px;
+text-transform: uppercase;
+}
+.main-container{
+    max-width: 1440px;
+    margin: auto;
+    background: #fff;
+}
+
+.about{
+    position: relative;
+    padding: 0 165px;
+    margin-bottom: 160px;
+    }
+    .about .img-box img{display: block;}
+.about .content-box{
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    padding: 95px;
+    max-width: 640px;
+    background: white;
+}
+.about .content-box h2{
+    font-size: 4.2 px;
+    margin-bottom: 30px;
+}
+.about .content-box p {
+color: hsl(0, 0%, 55%);
+line-height: 1.7;
+}
+.product{
+    position: relative;
+    padding: 0 165px;
+    margin-bottom: 160px;
+}
+.product h2{
+    font-size: 15px;
+    margin-bottom: 80px;
+}
+.product-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    place-content: center;
+    grid-gap: 30px;
+}
+.product-card{
+    position: relative;
+    height: 450px;
+    cursor: pointer;
+}
+.product-card img {
+height: 100%;
+width: 100%;
+object-fit: cover;
+object-position: top;
+}
+.product-card::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 40%,#000b);
+}
+.product-card:hover::after{background: linear-gradient(180deg, #fffa 40%,#555a);}
+.product-card h3{
+    position: absolute;
+    bottom: 35px;
+    left: 40px;
+    font-size: 15px;
+    color: #fff;
+    z-index: 5;
+}
+.product-card:hover h3{ color: black;}
+
+@media screen and (max-width:1200px){
+    .about .img-box {margin-bottom: 80px;}
+    .about .img-box img {width: 100%;}
+    .about .content-box{
+        position: static;
+        max-width: 100%;
+        text-align: center;
+        padding: 0 95px;
+    }
+}
+
+
+
+
+
+@media screen and (max-width:992px){
+   
+
+.product h2{text-align: center;}
+
+}
+
+
+@media screen and (max-width:768px){
+    
+
+
+    .banner h1{padding: 22px;}
+    .about .content-box{padding: 0 50px;}
+   
+
+}
+
+
+
+@media screen and (max-width:576px)    {
+.about .img-box {margin-bottom:  50px;}
+.about .content-box{padding:  0 15px;}
+.about .content-box h2 {margin-bottom: 20px;}
+.product h2 {margin-bottom:  20px;}
+.product-grid {grid-gap: 25px;}
+.product-card{height: 117px;}
+.product-card h3{
+    bottom: 15px;
+    left:20px;
+}
+}
+/* Estilos para o contêiner principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
