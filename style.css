@@ -160,6 +160,13 @@ object-position: top;
 }
 .product-card:hover h3{ color: black;}
 
+footer {
+	background-color: #3f51b5;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
 /* Estilos para dispositivos móveis */
 @media screen and (max-width: 1200px) {
   .about .img-box {
